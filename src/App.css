@@ -1,0 +1,287 @@
+
+#root {
+  min-height: 100vh;
+}
+
+.login-page {
+  min-height: 100vh;
+  padding: 48px 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  background: #f8fafc;
+}
+
+.login-decoration {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.decoration-one {
+  width: 420px;
+  height: 420px;
+  background: #e0f2fe;
+  top: -230px;
+  right: -120px;
+}
+
+.decoration-two {
+  width: 360px;
+  height: 360px;
+  background: #ccfbf1;
+  bottom: -230px;
+  left: -130px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 440px;
+  padding: 38px;
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 20px 60px rgba(18, 59, 101, 0.10);
+  position: relative;
+  z-index: 1;
+}
+
+.university-logo {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.logo-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  background: #123b65;
+  color: #5eead4;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 10px;
+}
+
+.logo-title {
+  color: #123b65;
+  font-weight: 800;
+  font-size: 25px;
+  letter-spacing: 4px;
+  margin: 0;
+}
+
+.university-name {
+  color: #64748b;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  line-height: 1.7;
+  max-width: 230px;
+  margin: 8px auto 0;
+}
+
+.welcome-text {
+  margin-bottom: 28px;
+}
+
+.welcome-tag {
+  color: #0f9488;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.welcome-text h1 {
+  font-size: 30px;
+  color: #123b65;
+  margin: 8px 0;
+  letter-spacing: -1px;
+}
+
+.welcome-text p {
+  font-size: 13px;
+  color: #64748b;
+  margin: 0;
+}
+
+.login-card form > label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: #334155;
+  margin: 18px 0 8px;
+}
+
+.input-wrapper {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 0 13px;
+  border: 1px solid #dbe4ee;
+  border-radius: 10px;
+  color: #64748b;
+  background: #fff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-wrapper:focus-within {
+  border-color: #0d9488;
+  box-shadow: 0 0 0 3px #ccfbf1;
+}
+
+.input-wrapper input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font: inherit;
+  font-size: 13px;
+  color: #123b65;
+}
+
+.input-wrapper input::placeholder {
+  color: #94a3b8;
+}
+
+.password-toggle,
+.text-button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.password-toggle {
+  display: grid;
+  place-items: center;
+  color: #64748b;
+  padding: 4px;
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin: 18px 0 24px;
+}
+
+.remember-option {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #64748b;
+  font-size: 11px;
+}
+
+.remember-option input {
+  accent-color: #0d9488;
+}
+
+.text-button {
+  color: #0d9488;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.login-button {
+  width: 100%;
+  min-height: 49px;
+  border: 0;
+  border-radius: 10px;
+  background: #123b65;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.login-button:hover {
+  background: #0d9488;
+  transform: translateY(-1px);
+}
+
+.login-footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 30px;
+  color: #64748b;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.footer-dot {
+  color: #0d9488;
+}
+
+.page-footer {
+  z-index: 1;
+  text-align: center;
+  margin-top: 25px;
+  color: #94a3b8;
+  font-size: 10px;
+  line-height: 1.8;
+}
+
+@media (max-width: 480px) {
+  .login-page {
+    padding: 24px 16px;
+  }
+
+  .login-card {
+    padding: 28px 22px;
+    border-radius: 20px;
+  }
+
+  .welcome-text h1 {
+    font-size: 27px;
+  }
+}
+.ktu-logo {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+  margin: 0 auto 10px;
+  display: block;
+}
+
+/* Center the welcome section */
+.welcome-text {
+  text-align: center;
+  width: 100%;
+  margin: 28px auto;
+}
+
+.welcome-tag {
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.welcome-text h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  margin: 14px 0 10px;
+}
+
+.welcome-text p {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.6;
+}

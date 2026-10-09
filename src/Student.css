@@ -1,0 +1,335 @@
+
+.student-layout {
+  min-height: 100vh;
+  display: flex;
+  background: #f4f7fb;
+  color: #173653;
+  font-family: Inter, Arial, sans-serif;
+}
+
+.student-sidebar {
+  width: 255px;
+  min-width: 255px;
+  min-height: 100vh;
+  padding: 28px 18px;
+  background: #ffffff;
+  border-right: 1px solid #e3eaf2;
+  display: flex;
+  flex-direction: column;
+}
+
+.student-back {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  border: none;
+  background: transparent;
+  color: #526b82;
+  font-size: 14px;
+  padding: 10px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.student-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 32px 5px;
+  color: #1c5685;
+}
+
+.student-brand h2 {
+  margin: 0;
+  font-size: 23px;
+}
+
+.student-brand p {
+  margin: 4px 0 0;
+  color: #7890a5;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.student-menu-label {
+  padding: 0 10px;
+  color: #91a1b2;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.student-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 12px;
+  margin: 4px 0;
+  border-radius: 9px;
+  color: #526b82;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.student-menu-item:hover,
+.student-menu-item.active {
+  background: #eaf3fb;
+  color: #1768a5;
+}
+
+.student-main {
+  flex: 1;
+  min-width: 0;
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 34px 40px;
+}
+
+.student-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.student-header > div:first-child > span {
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #8396a9;
+  font-weight: 700;
+}
+
+.student-header h1 {
+  font-size: 30px;
+  margin: 10px 0 6px;
+}
+
+.student-header p {
+  color: #8192a3;
+  margin: 0;
+  font-size: 14px;
+}
+
+.student-header-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  background: #e0edf9;
+  color: #226ca5;
+  display: grid;
+  place-items: center;
+}
+
+.student-profile-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: #ffffff;
+  border: 1px solid #e5ebf2;
+  border-radius: 18px;
+  padding: 28px;
+  margin-bottom: 22px;
+  box-shadow: 0 5px 20px rgba(30, 60, 90, 0.035);
+}
+
+.student-photo {
+  width: 112px;
+  height: 112px;
+  min-width: 112px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #246ba0;
+  background: #e4eff9;
+  border: 4px solid #f3f7fb;
+}
+
+.student-basic-info h2 {
+  font-size: 25px;
+  margin: 10px 0 6px;
+}
+
+.student-basic-info p {
+  color: #71869b;
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.student-active-badge {
+  display: inline-block;
+  background: #e4f7ed;
+  color: #16804b;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.student-semester {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 6px 10px;
+  background: #edf4fb;
+  border-radius: 7px;
+  color: #346b99;
+  font-size: 12px;
+}
+
+.student-info-card {
+  background: #ffffff;
+  border: 1px solid #e5ebf2;
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 22px;
+  box-shadow: 0 5px 20px rgba(30, 60, 90, 0.025);
+}
+
+.student-info-card h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 23px;
+  font-size: 18px;
+}
+
+.student-info-card h2 svg {
+  color: #2c79b5;
+}
+
+.student-details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px 35px;
+}
+
+.student-details-grid > div {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.student-details-grid span {
+  color: #8797a8;
+  font-size: 12px;
+}
+
+.student-details-grid strong {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #304b64;
+  font-size: 14px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.student-empty-state {
+  min-height: 150px;
+  border: 1px dashed #d8e3ee;
+  border-radius: 12px;
+  background: #f9fbfd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 24px;
+  color: #6b8ba7;
+}
+
+.student-empty-state strong {
+  margin-top: 12px;
+  color: #3d566d;
+  font-size: 14px;
+}
+
+.student-empty-state p {
+  margin: 8px 0 0;
+  color: #8797a8;
+  font-size: 13px;
+}
+
+.student-footer {
+  text-align: center;
+  color: #8a9bad;
+  font-size: 12px;
+  padding: 25px 0 5px;
+}
+
+@media (max-width: 900px) {
+  .student-sidebar {
+    width: 215px;
+    min-width: 215px;
+  }
+
+  .student-main {
+    padding: 25px 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .student-layout {
+    flex-direction: column;
+  }
+
+  .student-sidebar {
+    width: 100%;
+    min-width: 0;
+    min-height: auto;
+    padding: 12px;
+    border-right: none;
+    border-bottom: 1px solid #e3eaf2;
+  }
+
+  .student-brand {
+    margin: 16px 5px;
+  }
+
+  .student-menu-label {
+    margin-bottom: 8px;
+  }
+
+  .student-menu-item {
+    margin: 2px 0;
+  }
+
+  .student-main {
+    padding: 24px 14px;
+  }
+
+  .student-header h1 {
+    font-size: 25px;
+  }
+
+  .student-profile-card {
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .student-photo {
+    width: 76px;
+    height: 76px;
+    min-width: 76px;
+  }
+
+  .student-photo svg {
+    width: 38px;
+  }
+
+  .student-basic-info h2 {
+    font-size: 20px;
+  }
+
+  .student-info-card {
+    padding: 19px;
+  }
+
+  .student-details-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
